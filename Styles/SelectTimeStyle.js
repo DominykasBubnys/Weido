@@ -1,65 +1,82 @@
-import { StyleSheet } from "react-native";
+import { StyleSheet } from 'react-native'
 
 const styles = StyleSheet.create({
-    container: {
-        backgroundColor: "#E5E5E5",
-        width: "90%",
-        marginTop: 20,
-        marginRight: "auto",
-        marginLeft: "auto",
-        borderRadius: 30,
-        overflow: "hidden"
-    },
 
-    header: {
-        margin: 20,
-        fontStyle: "normal",
-        fontSize: 16,
-        lineHeight: 21,
-        letterSpacing: 1,
-        color: "#202020",
-    },
+  header: {
+    position: 'absolute',
+    left: '4.44%',
+    right: '15.83%',
+    top: '11.88%',
+    color: 'black',
+    bottom: '67.33%',
+    fontStyle: 'normal',
+    fontWeight: '600',
+    fontSize: 16,
+    lineHeight: 21,
+    letterSpacing: 1,
+    fontFamily: 'BRCombine-Black',
+    // eslint-disable-next-line no-dupe-keys
+    color: '#202020'
+  },
 
-    content: {
-        display:"flex",
-        padding: 10,
-        alignItems:"center"
-    },
+  container: {
+    position: 'relative',
+    width: 360,
+    height: 101,
+    borderColor: 'grey',
+    borderWidth: 2,
+    margin: 3
+  },
 
-    options: {
-        display: "flex",
-        flexDirection: "row",
-        justifyContent: "space-around",
-    },
+  selection_slider: {
+    borderRadius: 0,
+    position: 'absolute',
+    left: 0,
+    top: '44.59%'
+  },
 
-    selection_btn: {
-        borderColor: "white",
-        borderWidth: 1,
-        borderRadius: 30,
-        backgroundColor: "#E9E9E9",
-        margin: 10,
-        padding: 5
-    },
+  selection_list: {
+    display: 'flex',
+    flexDirection: 'row',
+    width: 400,
+    justifyContent: 'center',
+    alignItems: 'center',
+    padding: 0
+  },
 
-    default_btn_text:{
-        fontSize: 25,
-        textAlign:"center",
-    },
+  selection_btn: {
+    backgroundColor: 'white',
+    borderRadius: 30,
+    marginLeft: 8,
+    paddingLeft: 8,
+    paddingRight: 8,
+    borderColor: '#E9E9E9',
+    borderWidth: 1
+  },
 
-    submit_btn: {
-        margin: 10,
-        width: "50%",
-        borderColor: "white",
-        borderWidth: 1,
-        borderRadius: 30,
-        backgroundColor: "#E9E9E9",
-    },
+  default_btn_text: {
+    fontSize: 18,
+    textAlign: 'center',
+    fontWeight: '300',
+    fontStyle: 'normal',
+    fontFamily: 'MundialBlack.otf'
+  },
 
-    active_btn: {
-        borderColor: "green",
-        borderWidth: 3
-    }
-  
-});
+  submit_btn: {
+    borderRadius: 30,
+    margin: 10,
+    width: '50%',
+    borderColor: 'white',
+    borderWidth: 1,
+    backgroundColor: '#E9E9E9',
+    // eslint-disable-next-line no-dupe-keys
+    borderRadius: 30
+  },
 
-export default styles;
+  active_btn: {
+    borderColor: 'green',
+    borderWidth: 3
+  }
+})
+
+export default styles
