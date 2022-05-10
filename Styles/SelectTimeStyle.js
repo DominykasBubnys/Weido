@@ -1,21 +1,18 @@
 import { StyleSheet } from 'react-native'
 
 const styles = StyleSheet.create({
-
   header: {
     position: 'absolute',
     left: '4.44%',
     right: '15.83%',
     top: '11.88%',
-    color: 'black',
     bottom: '67.33%',
     fontStyle: 'normal',
     fontWeight: '600',
     fontSize: 16,
     lineHeight: 21,
     letterSpacing: 1,
-    fontFamily: 'BRCombine-Black',
-    // eslint-disable-next-line no-dupe-keys
+    fontFamily: 'BRCobane-Black',
     color: '#202020'
   },
 
@@ -59,7 +56,7 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     fontWeight: '300',
     fontStyle: 'normal',
-    fontFamily: 'MundialBlack.otf'
+    fontFamily: 'MundialBlack'
   },
 
   submit_btn: {
@@ -68,9 +65,7 @@ const styles = StyleSheet.create({
     width: '50%',
     borderColor: 'white',
     borderWidth: 1,
-    backgroundColor: '#E9E9E9',
-    // eslint-disable-next-line no-dupe-keys
-    borderRadius: 30
+    backgroundColor: '#E9E9E9'
   },
 
   active_btn: {

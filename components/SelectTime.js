@@ -11,34 +11,63 @@ const SelectTime = (props) => {
 
     const isActiveButton = activeButton === ID
 
-    return <Pressable onPress={() => { onPress(ID) }} style={[style, isActiveButton ? classes.active_btn : null]}>
+    return (
+      <Pressable
+        onPress={() => {
+          onPress(ID)
+        }}
+        style={[style, isActiveButton ? classes.active_btn : null]}
+      >
         <Text style={textStyle || classes.default_btn_text}>
-            {title || 'Click me!'}
+          {title || 'Click me!'}
         </Text>
-    </Pressable>
+      </Pressable>
+    )
   }
 
   const selectTimeHandler = (ID) => setActiveButton(ID)
 
   const submitTimeHnalder = () => setActiveButton(null)
 
-  return <View style={classes.container}>
+  return (
+    <View style={classes.container}>
+      <Text style={classes.header}>Numatomas atsiėmimo/gražinimo laikas</Text>
 
-    <Text style={classes.header} >Numatomas atsiėmimo/gražinimo laikas</Text>
-
-    <ScrollView horizontal style={classes.selection_slider}>
-
+      <ScrollView horizontal style={classes.selection_slider}>
         <View style={classes.selection_list}>
-            <CustomButton ID={1} title={'08:00'} style={classes.selection_btn} onPress={selectTimeHandler}/>
-            <CustomButton ID={2} title={'09:00'} style={classes.selection_btn} onPress={selectTimeHandler}/>
-            <CustomButton ID={3} title={'10:00'} style={classes.selection_btn} onPress={selectTimeHandler}/>
-            <CustomButton ID={4} title={'11:00'} style={classes.selection_btn} onPress={selectTimeHandler}/>
-            <CustomButton onPress={submitTimeHnalder} title='Susitarti' style={classes.selection_btn} />
+          <CustomButton
+            ID={1}
+            title={'08:00'}
+            style={classes.selection_btn}
+            onPress={selectTimeHandler}
+          />
+          <CustomButton
+            ID={2}
+            title={'09:00'}
+            style={classes.selection_btn}
+            onPress={selectTimeHandler}
+          />
+          <CustomButton
+            ID={3}
+            title={'10:00'}
+            style={classes.selection_btn}
+            onPress={selectTimeHandler}
+          />
+          <CustomButton
+            ID={4}
+            title={'11:00'}
+            style={classes.selection_btn}
+            onPress={selectTimeHandler}
+          />
+          <CustomButton
+            onPress={submitTimeHnalder}
+            title="Susitarti"
+            style={classes.selection_btn}
+          />
         </View>
-
-    </ScrollView>
-
-  </View>
+      </ScrollView>
+    </View>
+  )
 }
 
 export default SelectTime
